@@ -1,0 +1,11 @@
+# Webpage stuff
+*.html text
+*.htm text
+*.js text
+*.css text
+
+# Linguist
+*.html linguist-language=HTML
+*.htm linguist-language=HTML
+*.js linguist-language=JavaScript
+*.css linguist-language=CSS
