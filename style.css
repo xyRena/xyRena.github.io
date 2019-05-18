@@ -1,0 +1,86 @@
+/* Page defaults */
+body {
+    background: #101010;
+	font-family: arial;
+	font-size: 11pt;
+    margin: 0px;
+}
+
+/* Generic div elements */
+div {
+	max-width: 1000px;
+    padding: 0px;
+    margin: auto;
+    padding: 4px;
+    background: #101010;
+    color: #C0C0C0;
+}
+
+/* Highlighted "foreground" div elements */
+div.foreground {
+    background: #C0C0C0;
+    color: #101010;
+    padding: 4px;
+}
+
+/* Generic horizontal rule */
+hr {
+    border-width: 1px;
+    border-bottom-style: none;
+    border-color: #C0C0C0;
+	margin: 1px;
+}
+
+/* Generic a elements */
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+a:visited {
+    color: #808080;
+}
+
+a:hover {
+    color: #101010;
+    background: #C0C0C0;
+}
+
+/* "Foreground" div specific a elements */
+a.foreground {
+    color: #101010;
+    font-weight: bold;
+}
+
+a.foreground:hover {
+    color: #C0C0C0;
+    background: #101010;
+}
+
+a.foreground:visited {
+    color: #808080;
+}
+
+/* Generic small font */
+small {
+	font-size: 8pt;
+    color: #808080;
+}
+
+/* Generic margins */
+h1, h2 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 4px;
+}
+
+p {
+    margin: 4px;
+}
+
+ul {
+    margin: 4px;
+    list-style-type: square;
+    padding-inline-start: 24px;
+}
