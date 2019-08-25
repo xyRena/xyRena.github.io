@@ -6,7 +6,7 @@ html {
 }
 
 div.foreground {
-    background: #F0F0F0;
+    background: #D0D0D0;
     color: #101010;
     padding: 2px;
 }
@@ -50,18 +50,35 @@ ul {
     list-style-type: square;
 }
 
-h1, h2, h3, h4, h5, h6, p, ul, ol {
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
-h1, h2 {
+h1 {
+    text-align: center;
+    font-variant: small-caps;
+    background: #D0D0D0;
+    color: #101010;
+}
+
+h2 {
+    border-width: 3px;
+    border-style: none none double none;
+    border-color: #D0D0D0;
+    font-variant: small-caps;
+}
+
+h3 {
     border-width: 1px;
     border-style: none none solid none;
     border-color: #404040;
+    font-variant: small-caps;
 }
 
 pre {
     padding: 8px;
     background: #181818;
+    white-space: pre-wrap;
 }
+
