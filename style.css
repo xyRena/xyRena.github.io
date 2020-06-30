@@ -1,27 +1,16 @@
-html {
-    background: #101010;
+/* HTML default */
+body {
+    background: #202020;
     color: #D0D0D0;
-    max-width: 8.5in;
+    max-width: 850px;
     margin: auto;
 }
 
-div.foreground {
-    background: #D0D0D0;
-    color: #101010;
-    padding: 2px;
-}
-
-hr {
-    border-color: #404040;
-}
-
-div.foreground hr {
-    border-color: #B0B0B0;
-}
-
+/* Link styling */
 a {
+    border-bottom: 1px dotted;
     text-decoration: none;
-    color: #FFFFFF;
+    color: inherit;
 }
 
 a:visited {
@@ -29,56 +18,99 @@ a:visited {
 }
 
 a:hover {
-    color: #101010;
-    background: #FF2020;
+    color: #202020;
+    background: #D0D0D0;
 }
 
-div.foreground a {
-    color: #000000;
-}
-
-div.foreground a:hover {
-    color: #F0F0F0;
-}
-
-small {
-	font-size: 8pt;
-    color: #808080;
-}
-
-ul {
-    list-style-type: square;
-}
-
-h1, h2, h3, h4, h5, h6, p, ul, ol, pre {
+h1, h2, h3, h4, h5, h6, p, ul, ol, pre, table {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
+/* Headers */
 h1 {
     text-align: center;
     font-variant: small-caps;
-    background: #D0D0D0;
-    color: #101010;
+    margin-top: 2rem;
 }
 
 h2 {
     border-width: 3px;
     border-style: none none double none;
-    border-color: #D0D0D0;
     font-variant: small-caps;
+    margin-top: 2rem;
 }
 
 h3 {
     border-width: 1px;
     border-style: none none solid none;
-    border-color: #404040;
+    border-color: #505050;
     font-variant: small-caps;
+    margin-top: 2rem;
 }
 
-pre {
-    padding: 8px;
-    background: #181818;
-    white-space: pre-wrap;
+h4 {
+    border-width: 1px;
+    border-style: none none dotted none;
+    border-color: #383838;
+    margin-top: 2rem;
 }
 
+h1 + h2,
+h1 + h3,
+h1 + h4,
+h2 + h3,
+h2 + h4,
+h3 + h4 {
+    margin-top: 1rem;
+}
+
+/* Site-specific formatting */
+a#title {
+    display: block;
+    font: 40px monospace;
+    font-weight: bold;
+    color: inherit;
+    background: inherit;
+    border: none;
+    padding: 4px;
+}
+
+ul.links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    background-image: linear-gradient(#000000, #202020);
+}
+
+ul.links li {
+    float: left;
+}
+
+ul.links li a {
+    display: block;
+    text-align: center;
+    vertical-align: center;
+    padding: 8px 16px;
+    font: 16px monospace;
+    font-weight: bold;
+    border: none;
+    color: inherit;
+}
+
+ul.links li a:hover {
+    color: #202020;
+}
+
+ul.links li.right {
+    float: right;
+}
+
+div#footer {
+    text-align: right;
+    width: 100%;
+    border-top: 1px solid #505050;
+    font-size: 12px;
+    padding: 2px;
+}
